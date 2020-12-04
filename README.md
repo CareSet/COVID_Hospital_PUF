@@ -8,3 +8,5 @@ Then the usage of the command is:
 ```
 > php standalone_covid_data_importer.php <covid_csv_file_name> <db_to_import_to> <table_to_import_to> 
 ```
+
+The script will not erase the database by default, but it will erase the current contents of the table_to_import_to. So be careful of this..
