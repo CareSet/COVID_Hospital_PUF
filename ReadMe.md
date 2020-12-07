@@ -165,14 +165,14 @@ List of ratios that it is not possible to calculate in this data release:
 ### Why would hospital data change over time?
 As the central database is updated over time, new information becomes available. This is especially true for any hospital reporting that occurs one day late, before the day that a weekly snapshot of data is taken. So if the data file is released every Monday (for instance) and a specific hospital failed to report on Thursday, but then reports for the Thursday data on Tuesday. Subsequent data releases will include the updated hospital data, which will be slightly different than the data that is initially released. This is a “reporting lag” effect that is common to any complex reporting/surveillance process (the same kind of lag can happen with medical claim databases over time, for instance).
 
-
-
+### Influenza data?
+The reporting for influenza data from hospitals is common, but optional. 
 
 ### Is there any data missing from the file?
 Yes.
 
 
-See the question on which types of hospitals are missing from this data.
+See the question on which types of hospitals are missing from this data. Also note that influenza data is not currently required for reporting purposees.
 
 
 When there are fewer than 4 patients in a data field the cell is redacted and replaced with -999999. This value was chosen to ensure that users would not make the mistake of quickly “averaging” a column to come to a conclusion that does not account for the fact that many of the cells contain too few patients to release (for privacy concerns). To conduct analysis on this data, one must decide how to handle the -999999 fields. 
