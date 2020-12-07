@@ -149,13 +149,10 @@ As you seek to create meaningful metrics from this data… be aware that there a
 
 | Example Metrics for Adult Hospitalizations  | Formula |
 | ------------- | ------------- |
-| How full is the hospital with adult confirmed and suspected COVID patients?  | total_adult_patients_hospitalized_confirmed_and_suspected_covid_7_day_avg
- / all_adult_hospital_inpatient_beds_7_day_avg |
-| Total staffed adult ICU bed fullness? (including COVID and non-COVID ICU usage)  | staffed_adult_icu_bed_occupancy_7_day_avg
-  / total_staffed_adult_icu_beds_7_day_avg  |
-| How full is the adult ICU of confirmed and suspected COVID patients? | staffed_icu_adult_patients_confirmed_and_suspected_covid_7_day_avg
-  / total_staffed_adult_icu_beds_7_day_avg  |
-| What proportion of currently hospitalized adult patients are COVID patients?  | total_adult_patients_hospitalized_confirmed_and_suspected_covid_7_day_avg / all_adult_hospital_inpatient_bed_occupied_7_day_average  |
+| How full is the hospital with adult confirmed and suspected COVID patients?  | total_adult_patients_hospitalized_confirmed_and_suspected_covid_7_day_avg/ all_adult_hospital_inpatient_beds_7_day_avg |
+| Total staffed adult ICU bed fullness? (including COVID and non-COVID ICU usage)  | staffed_adult_icu_bed_occupancy_7_day_avg/ total_staffed_adult_icu_beds_7_day_avg  |
+| How full is the adult ICU of confirmed and suspected COVID patients? | staffed_icu_adult_patients_confirmed_and_suspected_covid_7_day_avg/ total_staffed_adult_icu_beds_7_day_avg  |
+| What proportion of currently hospitalized adult patients are COVID patients?  | total_adult_patients_hospitalized_confirmed_and_suspected_covid_7_day_avg /all_adult_hospital_inpatient_bed_occupied_7_day_average  |
 
 
 
