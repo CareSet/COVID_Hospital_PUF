@@ -2,6 +2,41 @@
 This document answers frequently asked questions about the COVID-19 facility-level capacity data, initially released the week of Dec 7th, 2020. This is not a substitute for the data documentation, which lives here[a]. This FAQ was developed in collaboration with a group of data journalists, data scientists, and healthcare system researchers who have reviewed the data. If you have any questions, please [create a new Github issue](https://github.com/CareSet/covid_facility_capacity_puf/issues/new)! 
 
 
+
+
+### Where to get this data?
+### What is this data and where does it come from?
+### What is the update schedule for this dataset?
+### Will more data fields be released?
+### Is this data reliable?
+### Are there hospitals treating COVID patients in the U.S. that are not represented in this data?
+### How is this dataset aggregated?
+### What data linkage is possible using this data?
+### What other data sources cover the same/similar information at the hospital level?
+### What geographic analysis methods are possible with this data?
+### What other organizations generate reports or data views on this data?
+### What is this data useful for?
+### What is HHS Protect Data and its role in COVID-19 planning?
+### What about pediatric data?
+### What is the structure of the data?
+### Why would the number of inpatient beds or ICU beds change over time?
+### How to make meaningful capacity metrics for further study?
+### Why would hospital data change over time?
+### Is there any data missing from the file?
+### What type of file is this?
+### How to compare this data to state-level data?
+### How to examine regional (city/county) data with this dataset, what is new?
+### I checked a hospital’s dashboard and the numbers are slightly different from the ones in this file. Why is that?
+### Are there semantic problems that make comparing this data difficult?
+### Who wrote this FAQ?
+
+
+
+
+
+
+
+
 ### Where to get this data?
 You can get this data [from healthdata.gov](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-facility)
 And you can read the HHS press release about this release here [b]
@@ -35,19 +70,22 @@ This is a good question, and the HHS data teams are always looking for feedback 
 
 
 ### Is this data reliable?
-This data accurately reflects the raw reporting that has been provided to the HHS Protect database. This data is modified only to correct obvious errors. For instance, if a hospital has been reporting that they have 10 available and staffed ICU beds for months, and then, suddenly are reporting that they have 23456789 beds, this value is reset to 10, based on the presumption that this was an accidental data entry error on the part of hospital personnel. Data correction efforts typically involve contacting the reporting hospital and ensuring that data fixes are in fact correct. 
+This data accurately reflects the raw reporting that has been provided to the HHS Protect database. Before going into the HHS Protect database, this reporting data is modified only to correct obvious errors. For instance, if a hospital has been reporting that they have 10 available and staffed ICU beds for months, and then, suddenly are reporting that they have 23456789 beds, this value is reset to 10, based on the presumption that this was an accidental data entry error on the part of hospital personnel. Data correction efforts typically involve contacting the reporting hospital and ensuring that data fixes are in fact correct. 
 
 
-Beyond these data corrections, it is improbable that modifications or censoring of the contents of the underlying data has occurred. These facility-level data reports have been aggregated and filtered only and precisely as described in the data documentation for the data. Outside beta-testers of the data have confirmed that these data line up with other publically available data sources, including those from states and other national resources available from CMS and the CDC. It is very likely that there is cruft and other problems with the data, but a careful examination of the data makes it clear that the data has not been modified to fit any particular perspective or agenda about the COVID crisis.  
+Beyond these data corrections, it is improbable that modifications or censoring of the contents of the underlying data has occurred. These facility-level data reports have been aggregated and filtered only and precisely as described in the data documentation for the data. Outside beta-testers of the data have confirmed that previous data releases from HHS Protect line up with other publically available data sources, including those from states and other national resources available from CMS and the CDC. There is a history of cruft and other problems with the various data releases, but a careful examination of the slowly improving data releases makes it clear that the data has not been modified to fit any particular perspective or agenda about the COVID-19 crisis.  This is not to say that this data release or other releases are perfectly correct, but it does appear that these data releases are good-faith efforts to release accurate data.
 
 
-Which in turn leads to its own issues. If hospital personnel accidentally type in that they have ‘11’ ICU beds, where in fact they only have 10, then this error might not be caught or corrected. It is also possible that hospitals will seek to amend their reports at a later time, based on improved information. The goal is to have a perfectly accurate daily reporting of dozens of complex values from thousands of facilities across the country. This is a lofty goal indeed. For each hospital report, hundreds of people are directly or indirectly involved, at the hospitals, state agencies, as well as Federal employees, and contractors. In many cases, these people have been working for months with no weekends or breaks. Some of them are basically either working on this or sleeping. At the hospital, especially at smaller facilities, personnel might be making the decision between working on reporting obligations and patient care. As more and more of the reporting process becomes automated and those automations are made fully reliable, the workload of individuals along the data pipeline has been reduced, and the quality of the underlying data is continuously improving. 
+Which in turn leads to its own issues. If hospital personnel accidentally type in that they have ‘11’ ICU beds, where in fact they only have 10, then this error might not be caught or corrected. It is also possible that hospitals will seek to amend their reports at a later time, based on improved information. The goal is to have a perfectly accurate daily reporting of dozens of complex values from thousands of facilities across the country. This is a lofty goal indeed. For each hospital report, hundreds of people are directly or indirectly involved, at the hospitals, state agencies, as well as Federal employees, and contractors. In many cases, these people have been working for months with no weekends or breaks. Some of them are basically either working on this or sleeping. At the hospital, especially at smaller facilities, personnel might be making the decision between working on reporting obligations and patient care. As more and more of the reporting process becomes automated and those automations are made fully reliable, the workload of individuals along the hospital reporting data pipeline has been reduced, and the quality of the underlying data is continuously improving. This is evidenced in the [graph of hospital reporting rates](https://healthdata.gov/covid-19-hospital-reporting-hospital-reporting-trend-dashboard) which shows more and more reporting fields being correctly reported every day by hospitals across the country. 
 
 
-But it is not perfect, and expectations that the resulting data will be perfect are not reasonable. The right answer to the question “is the data reliable?” is not yes or no. The data has been reliable enough to be used in Federal response planning for some time and continues to improve each day. The reporting consistency is high enough now that the data is likely to become reliable enough for broad release to the public for dozens of purposes. 
+It is critical to remain empathetic with the front-line hospitals who are responsible for entering this data. They do so under very potentially stressful circumstances and the reporting is most important, exactly when things are most difficult at the hospital. 
 
 
-Expect restatements. Given that hospitals will update past reporting to HHS, HHS will update the data with some kind of restatements. This will maintain transparency as to the true impact and the data capture over time. 
+The data release is not perfect, and expectations that the resulting data will be perfect are not reasonable. The right answer to the question “is the data reliable?” is not yes or no. The data has been reliable enough to be used in Federal response planning for some time and continues to improve each day. The reporting consistency is high enough now that the data is likely to become reliable enough for broad release to the public for dozens of purposes. 
+
+
+Expect restatements. Given that hospitals will update past reporting to HHS, HHS will update the data with some kind of restatements. This will maintain transparency as to how reporting data capture changes over time. 
 
 
 ### Are there hospitals treating COVID patients in the U.S. that are not represented in this data?
@@ -118,7 +156,7 @@ Any analysis that seeks to understand how the COVID crisis has impacted local co
 There continue to be misinformation campaigns that deny the usefulness of masks or detract from other CDC recommendations, like social distancing. Many of these campaigns emphasize that the severity of the disease is less than it actually is. This dataset can be used to understand and model the regional impact of these misinformation campaigns, as well as provide direct evidence needed to combat them. 
 
 
-### Why is the HHS Protect Data so critical to COVID-19 planning?
+### What is HHS Protect Data and its role in COVID-19 planning?
 The Central HHS Protect database powers the highest level of COVID coordination in the United States. There are multiple Federal resources, including access to doses of Remdesivir, which are allocated based on the daily hospital reporting that ultimately goes into the HHS Protect Database. Other important resources include doctors from the DOD and other Federal teams that can be used to augment staff at local hospitals in emergency situations. 
 
 
@@ -226,7 +264,15 @@ The impact on hospitals is very localized. The problem with releasing aggregated
 ### I checked a hospital’s dashboard and the numbers are slightly different from the ones in this file. Why is that? 
 
 
-First, of course, it could be a data entry or aggregation error. (And there are ways to provide feedback on this data at healthdata.gov.) However, there could be reasons for small discrepancies between an individual facility’s dashboard or internal reporting and this file, that are not mistakes of any kind. For one, this file provides a snapshot of the previous week’s data, so an individual facility’s reporting may be more up to date. There could also be differences in data definitions between the ones HHS has settled on and any particular local facility. It seems trivial but what it means to have a “bed” is not actually that simple. This is also a frequent reason for small differences between state-level reports and national reports.  
+First, of course, it could be a data entry or aggregation error. (And there are ways to provide feedback on this data at healthdata.gov.) However, there could be reasons for small discrepancies between an individual facility’s dashboard or internal reporting and this file, that are not mistakes of any kind. For one, this file provides a snapshot of the previous week’s data, so an individual facility’s reporting may be more up to date. The aggregations for hospital dashboards are typically daily, while this dataset is aggregated across a week (Friday-Thurs), and does not not represent any specific day. There could also be differences in data definitions between the ones HHS has settled on and any particular local facility. It seems trivial but what it means to have a “bed” is not actually that simple. This is also a frequent reason for small differences between state-level reports and national reports.  
+
+
+
+
+### What does ‘coverage’ mean?
+This is the number of days within the weekly reporting period (Friday-Thurs) that the hospital has currently submitted reports for. This number will range between 0 (no days reporting) and 7 (reported every day). 
+
+
 
 
 ### Are there semantic problems that make comparing this data difficult? 
@@ -248,7 +294,8 @@ This FAQ is a collaboration between:
 
 
 * Data Journalists at [Careset Systems](https://www.careset.com)
-* Researchers from the [University of Minnesota COVID-19 Hospitalization Tracking Project](https://carlsonschool.umn.edu/mili-misrc-covid19-tracking-project) at the Carlson School of Management - [Medical Industry Leadership Institute (MILI)](https://carlsonschool.umn.edu/faculty-research/medical-industry-leadership-institute) and the [Management Information Systems Research Center (MISRC)](https://carlsonschool.umn.edu/faculty-research/mis-research-center) 
+* Researchers from the [University of Minnesota COVID-19 Hospitalization Tracking Project](https://carlsonschool.umn.edu/mili-misrc-covid19-tracking-project) at the Carlson School of Management - [Medical Industry Leadership Institute (MILI)](https://carlsonschool.umn.edu/faculty-research/medical-industry-leadership-institute) and the [Management Information Systems Research Center (MISRC)](https://carlsonschool.umn.edu/faculty-research/mis-research-center)
+* Volunteers from [COVID Exit Strategy](https://www.covidexitstrategy.org) 
 [a]TODO link to data documentation.
 [b]Add this link
 [c]Does this deserve its own question.
