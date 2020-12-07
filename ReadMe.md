@@ -3,40 +3,6 @@ This document answers frequently asked questions about the COVID-19 facility-lev
 
 
 
-
-### Where to get this data?
-### What is this data and where does it come from?
-### What is the update schedule for this dataset?
-### Will more data fields be released?
-### Is this data reliable?
-### Are there hospitals treating COVID patients in the U.S. that are not represented in this data?
-### How is this dataset aggregated?
-### What data linkage is possible using this data?
-### What other data sources cover the same/similar information at the hospital level?
-### What geographic analysis methods are possible with this data?
-### What other organizations generate reports or data views on this data?
-### What is this data useful for?
-### What is HHS Protect Data and its role in COVID-19 planning?
-### What about pediatric data?
-### What is the structure of the data?
-### Why would the number of inpatient beds or ICU beds change over time?
-### How to make meaningful capacity metrics for further study?
-### Why would hospital data change over time?
-### Is there any data missing from the file?
-### What type of file is this?
-### How to compare this data to state-level data?
-### How to examine regional (city/county) data with this dataset, what is new?
-### I checked a hospital’s dashboard and the numbers are slightly different from the ones in this file. Why is that?
-### Are there semantic problems that make comparing this data difficult?
-### Who wrote this FAQ?
-
-
-
-
-
-
-
-
 ### Where to get this data?
 You can get this data [from healthdata.gov](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-facility)
 And you can read the HHS press release about this release here [b]
