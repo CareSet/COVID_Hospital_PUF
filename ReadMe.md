@@ -3,40 +3,6 @@ This document answers frequently asked questions about the COVID-19 facility-lev
 
 
 
-- [Facility COVID PUF Community FAQ](#facility-covid-puf-community-faq)
-    + [Where to get this data?](#where-to-get-this-data-)
-    + [What is this data and where does this data come from?](#what-is-this-data-and-where-does-this-data-come-from-)
-    + [What is the update schedule for this dataset?](#what-is-the-update-schedule-for-this-dataset-)
-    + [Will more data fields be released?](#will-more-data-fields-be-released-)
-    + [Is this data reliable?](#is-this-data-reliable-)
-    + [Are there hospitals treating COVID patients in the U.S. that are not represented in this data?](#are-there-hospitals-treating-covid-patients-in-the-us-that-are-not-represented-in-this-data-)
-    + [How is this dataset aggregated?](#how-is-this-dataset-aggregated-)
-    + [What data linkage is possible using this data?](#what-data-linkage-is-possible-using-this-data-)
-    + [What other data sources cover the same/similar information at the hospital level?](#what-other-data-sources-cover-the-same-similar-information-at-the-hospital-level-)
-    + [What geographic analysis methods are possible with this data?](#what-geographic-analysis-methods-are-possible-with-this-data-)
-    + [What other organizations generate reports or data views on this data?](#what-other-organizations-generate-reports-or-data-views-on-this-data-)
-    + [What is this data useful for?](#what-is-this-data-useful-for-)
-    + [What about pediatric data?](#what-about-pediatric-data-)
-    + [What is the structure of the data and how is it different?](#what-is-the-structure-of-the-data-and-how-is-it-different-)
-    + [Why would the number of inpatient beds or ICU beds change over time?](#why-would-the-number-of-inpatient-beds-or-icu-beds-change-over-time-)
-    + [How to make meaningful capacity metrics for further study?](#how-to-make-meaningful-capacity-metrics-for-further-study-)
-    + [Why would hospital data change slightly over time?](#why-would-hospital-data-change-slightly-over-time-)
-    + [Is there any data missing from the file?](#is-there-any-data-missing-from-the-file-)
-    + [What type of file is this?](#what-type-of-file-is-this-)
-    + [How to compare this data to state-level data?](#how-to-compare-this-data-to-state-level-data-)
-    + [How to examine regional (city/county) data with this dataset, what is new?](#how-to-examine-regional--city-county--data-with-this-dataset--what-is-new-)
-    + [I checked a hospital’s dashboard and the numbers are slightly different from the ones in this file. Why is that?](#i-checked-a-hospital-s-dashboard-and-the-numbers-are-slightly-different-from-the-ones-in-this-file-why-is-that-)
-    + [Who wrote this FAQ?](#who-wrote-this-faq-)
-
-
-
-
-
-
-
-
-
-
 ### Where to get this data?
 You can get this data [from healthdata.gov](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-facility)
 And you can read the HHS press release about this release here [b]
