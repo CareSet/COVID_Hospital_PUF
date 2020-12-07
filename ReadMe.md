@@ -1,11 +1,12 @@
 # Facility COVID PUF Community FAQ
-This document answers frequently asked questions about the COVID-19 facility-level capacity data, initially released the week of Dec 7th, 2020. This is not a substitute for the data documentation, which lives here[a]. This FAQ was developed in collaboration with a group of data journalists, data scientists, and healthcare system researchers who have reviewed the data. If you have any questions, please [create a new Github issue](https://github.com/CareSet/covid_facility_capacity_puf/issues/new)! 
+This document answers frequently asked questions about the COVID-19 facility-level capacity data, initially released the week of Dec 7th, 2020. This is not a substitute for the data documentation. This FAQ was developed in collaboration with a group of data journalists, data scientists, and healthcare system researchers who have reviewed the data. If you have any questions, please [create a new Github issue](https://github.com/CareSet/covid_facility_capacity_puf/issues/new)! 
 
 
 
 ### Where to get this data?
 You can get this data [from healthdata.gov](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-facility)
-And you can read the HHS press release about this release here [b]
+And you can read the HHS press release about this release at the [HealthData.gov Blog here](https://healthdata.gov/hhs-publishes-covid-19-hospital-facility-level-data)
+
 ### What is this data and where does it come from?
 Each row of data in this file represents the COVID-19 related capacity information for a single hospital facility, over the course of a seven day period. (Friday-Thursday). This data is reported by nearly every hospital to the Federal Government in the US each day.  This means that each row of data is based on the aggregated reporting for the previous week. 
  
