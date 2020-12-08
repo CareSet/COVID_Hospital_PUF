@@ -5,7 +5,7 @@ This document answers frequently asked questions about the COVID-19 facility-lev
 
 ### Where to get this data?
 You can get this data [from healthdata.gov](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-facility)
-And you can read the HHS press release about this release at the [HealthData.gov Blog here](https://healthdata.gov/hhs-publishes-covid-19-hospital-facility-level-data)
+And you can read the [HHS press release](https://www.hhs.gov/about/news/2020/12/07/hhs-publishes-covid-19-hospital-facility-level-data.html) about this release and the [HealthData.gov Blog entry about the data](https://healthdata.gov/hhs-publishes-covid-19-hospital-facility-level-data)
 
 ### What is this data and where does it come from?
 Each row of data in this file represents the COVID-19 related capacity information for a single hospital facility, over the course of a seven day period. (Friday-Thursday). This data is reported by nearly every hospital to the Federal Government in the US each day.  This means that each row of data is based on the aggregated reporting for the previous week. 
