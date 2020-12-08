@@ -22,7 +22,7 @@ Every day most hospitals in the U.S. are required to report information on the f
 To understand exactly what is in the data it is important to understand what is reported by hospitals each day. Please refer to the current version of the [COVID-19 Guidance for Hospital Reporting and FAQs For Hospitals, Hospital Laboratory, and Acute Care Facility Data Reporting](https://www.hhs.gov/sites/default/files/covid-19-faqs-hospitals-hospital-laboratory-acute-care-facility-data-reporting.pdf)
 
 
-This data is reported daily from hospitals, either through the Teletracking system or through reports sent via State-level health departments, and entered into the central HHS Protect database.[c]
+This data is reported daily from hospitals, either through the Teletracking system or through reports sent via State-level health departments, and entered into the central HHS Protect database.
 
 
 ### What is the update schedule for this dataset?
@@ -67,7 +67,7 @@ Psychiatric and rehabilitation hospitals are also omitted, as they are not centr
 This dataset is aggregated on a per-hospital, per-week basis. That means each hospital can appear more than once in the data file, with one additional row for each week of reporting. Hospitals are generally identified by the contract number they have with Medicare, which is called the “CCN”. This is not part of the primary identifier for the row, because some hospitals do not have a CCN number. This is why the hospital_pk exists (which is the hospital identifier in the file). Normally the hospital_pk field is just the CCN, but sometimes it is a programmatically generated identifier. 
 
 
-CCN stands for CMS Certification Number. For more information on what the CCN is, look in the [CCN Manual](https://www.cms.gov/regulations-and-guidance/guidance/transmittals/downloads/r29soma.pdf)
+CCN stands for CMS Certification Number. For more information on what the CCN is, look in the [CCN Manual](https://www.cms.gov/regulations-and-guidance/guidance/transmittals/downloads/r29soma.pdf).
 
 
 There are a few hospital facilities that do not have CCN numbers in the database. There are also a few rows of data that share the same CCN between several facilities. There are very few of these hospitals (less than 33 in the first data release).
@@ -103,17 +103,12 @@ There are a few hospital facilities that do not have CCN numbers in the database
 * Daily deaths and hospitalizations https://healthdata.gov/dataset/covid-19-daily-cases-deaths-and-hospitalizations 
 ### What geographic analysis methods are possible with this data?
 See the question about data linking for methods to link data into various census datasets. These datasets cover issues related to socioeconomic status, social determinants of health and other healthcare equity issues. There is also a field called is_metro_micro which can be used to quickly make a determination about how large a city the hospital is serving. This is a good way to quickly conduct a geographical analysis of rural vs urban settings in the reported data. This is based on the [Metropolitan vs Micropolitan distinction in Census data](https://www.census.gov/programs-surveys/metro-micro.html)
-### What other organizations generate reports or data views on this data?
-
+### What other organizations generate reports or data views on this data
 
 * Covid Tracking Project https://covidtracking.com/
    * Map visualization coming soon 
 * University of Minnesota Covid-19 Hospitalization Tracking Project  https://carlsonschool.umn.edu/mili-misrc-covid19-tracking-project
    * New County Level Dashboard 
-
-
-
-
 
 
 ### What is this data useful for?
@@ -131,13 +126,12 @@ All of the decisions about how these resources are distributed are sourced from 
 
 
 This is not the first dataset to be released to the public from HHS Protect. There is a publicly available website that features the data released from HHS Protect at [https://protect-public.hhs.gov/](https://protect-public.hhs.gov/).
+
 ### What about pediatric data?
 There is information about pediatric cases and pediatric hospitals included in the dataset. However, there is currently no information about how full pediatric ICUs are in this data release. This is due to a strategic decision in the underlying reporting infrastructure. Generally pediatric data is not reported, given that pediatric infection is relatively rare, and in order to ensure that reporting is as simple as possible for hospitals. 
+
 ### What is the structure of the data?
 This is a CSV flat file and the structure is documented in the data dictionary. 
-
-
-
 
 ### Why would the number of inpatient beds or ICU beds change over time?
 The reporting is rarely concerned with the number of beds at a facility. The issue is how many beds are staffed. If you have 100 beds in the hospital and 10 beds in an ICU, but a hospital only has enough nurses and doctors to support 50 of the hospital beds and 5 ICU beds, then the hospital would report 50 beds and 5 ICU beds available that day. As a result, the “bed capacity” is related to the number of actual beds in a facility and also the staffing available at the hospital. Over time, this number will fluctuate slightly. 
@@ -146,7 +140,7 @@ The reporting is rarely concerned with the number of beds at a facility. The iss
 
 
 ### How to make meaningful capacity metrics for further study?
-As you seek to create meaningful metrics from this data… be aware that there are some “very small” numbers in some rows of data that should receive special attention  in order to get meaningful information from metrics/ratios. Anyone analyzing this data, should remain aware of invalid ratios created by very small numbers.   	
+As you seek to create meaningful metrics from this data, be aware that there are some “very small” numbers in some rows of data that should receive special attention in order to get meaningful information from metrics/ratios. Anyone analyzing this data, should remain aware of invalid ratios created by very small numbers.   	
 
 | Example Metrics for Adult Hospitalizations  | Formula |
 | ------------- | ------------- |
@@ -205,7 +199,8 @@ There are many tutorials available online about how to import CSV files into you
 
 
 ### Why are there -999999 values in the data? 
-This is how HHS marks cells that have been redacted. See question “Is there any data missing from the file?”
+This is how HHS marks cells that have been redacted. See question [“Is there any data missing from the file?”](ReadMe.md#is-there-any-data-missing-from-the-file)
+
 ### How to compare this data to state-level data?
 There are several differences between the data export process for the facility level and state-level data. They are aggregated over different time periods as well as at different regional aggregations. As a result, there will always be some differences between an analysis that is based on the state-level public use file vs a state-based analysis that is drawn from the state-field in the facility-aggregated dataset. There are multiple differences between these data frames, including data that is withheld for privacy reasons, that will make a perfect matchup between different Public Use Files (PUFs) impossible. This includes redactions resulting in -999999 in a given field. 
 
@@ -219,7 +214,7 @@ The impact on hospitals is very localized. The problem with releasing aggregated
 ### I checked a hospital’s dashboard and the numbers are slightly different from the ones in this file. Why is that? 
 
 
-First, of course, it could be a data entry or aggregation error. (And there are ways to provide feedback on this data at healthdata.gov.) However, there could be reasons for small discrepancies between an individual facility’s dashboard or internal reporting and this file, that are not mistakes of any kind. For one, this file provides a snapshot of the previous week’s data, so an individual facility’s reporting may be more up to date. The aggregations for hospital dashboards are typically daily, while this dataset is aggregated across a week (Friday-Thurs), and does not not represent any specific day. There could also be differences in data definitions between the ones HHS has settled on and any particular local facility. It seems trivial but what it means to have a “bed” is not actually that simple. This is also a frequent reason for small differences between state-level reports and national reports.  
+First, it could be a data entry or aggregation error. (There are ways to provide feedback on this data at healthdata.gov.) However, there could be reasons for small discrepancies between an individual facility’s dashboard or internal reporting and this file, that are not mistakes of any kind. For one, this file provides a snapshot of the previous week’s data, so an individual facility’s reporting may be more up to date. The aggregations for hospital dashboards are typically daily, while this dataset is aggregated across a week (Friday-Thurs), and does not not represent any specific day. There could also be differences in data definitions between the ones HHS has settled on and any particular local facility. It seems trivial but what it means to have a “bed” is not actually that simple. This is also a frequent reason for small differences between state-level reports and national reports.  
 
 
 
@@ -228,18 +223,13 @@ First, of course, it could be a data entry or aggregation error. (And there are 
 This is the number of days within the weekly reporting period (Friday-Thurs) that the hospital has currently submitted reports for. This number will range between 0 (no days reporting) and 7 (reported every day). 
 
 
-
-
 ### Are there semantic problems that make comparing this data difficult? 
 Yes.
 There are many semantic problems between different COVID datasets, but two significant semantic problems should be highlighted. 
 
+1. The first is the distinction between “confirmed” and “suspected” COVID-19 cases. Sometimes these are merged into a single field called “cases”. This impacts how ICU beds are reported as well case counts. 
 
-The first is the distinction between “confirmed” and “suspected” COVID-19 cases. Sometimes these are merged into a single field called “cases”. This impacts how ICU beds are reported as well case counts. 
-
-
-The second is what is meant by an “available bed”. Sometimes this number means “beds that are properly staffed” and sometimes this means “the number of literal beds”. 
-
+2. The second is what is meant by an “available bed”. Sometimes this number means “beds that are properly staffed” and sometimes this means “the number of literal beds”. 
 
 Distinctions like this account for a substantial amount of the differences between data reported from various levels of government. 
 
@@ -247,10 +237,6 @@ Distinctions like this account for a substantial amount of the differences betwe
 ### Who wrote this FAQ?
 This FAQ is a collaboration between: 
 
-
 * Data Journalists at [Careset Systems](https://www.careset.com)
 * Researchers from the [University of Minnesota COVID-19 Hospitalization Tracking Project](https://carlsonschool.umn.edu/mili-misrc-covid19-tracking-project) at the Carlson School of Management - [Medical Industry Leadership Institute (MILI)](https://carlsonschool.umn.edu/faculty-research/medical-industry-leadership-institute) and the [Management Information Systems Research Center (MISRC)](https://carlsonschool.umn.edu/faculty-research/mis-research-center)
-* Volunteers from [COVID Exit Strategy](https://www.covidexitstrategy.org) 
-[a]TODO link to data documentation.
-[b]Add this link
-[c]Does this deserve its own question.
+* Volunteers from [COVID Exit Strategy](https://www.covidexitstrategy.org)
