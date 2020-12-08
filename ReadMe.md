@@ -131,7 +131,10 @@ This is not the first dataset to be released to the public from HHS Protect. The
 There is information about pediatric cases and pediatric hospitals included in the dataset. However, there is currently no information about how full pediatric ICUs are in this data release. This is due to a strategic decision in the underlying reporting infrastructure. Generally pediatric data is not reported, given that pediatric infection is relatively rare, and in order to ensure that reporting is as simple as possible for hospitals. 
 
 ### What is the structure of the data?
-This is a CSV flat file and the structure is documented in the data dictionary. 
+This is a CSV flat file and the structure is documented in the data dictionary.
+
+### Why would the number of beds change week over week?
+All of the bed numbers in the hospital data set are based on staffed beds.  It is possible that more beds exist in the hospital but only have staff to cover the number of beds reported.  This is why it’s possible to see a variance in the number of beds reported as well as physically added or eliminating beds from the hospital.
 
 ### Why would the number of inpatient beds or ICU beds change over time?
 The reporting is rarely concerned with the number of beds at a facility. The issue is how many beds are staffed. If you have 100 beds in the hospital and 10 beds in an ICU, but a hospital only has enough nurses and doctors to support 50 of the hospital beds and 5 ICU beds, then the hospital would report 50 beds and 5 ICU beds available that day. As a result, the “bed capacity” is related to the number of actual beds in a facility and also the staffing available at the hospital. Over time, this number will fluctuate slightly. 
