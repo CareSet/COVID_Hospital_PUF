@@ -92,6 +92,8 @@ There are a few hospital facilities that do not have CCN numbers in the database
    * And the following article describing the use of Zip codes/ZCTA codes for epedimilogical research https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1762013/
    * There are zip code to ZCTA crosswalks available https://udsmapper.org/zip-code-to-zcta-crosswalk/
    * You can use this to look into geofencing data through zip code like SafeGraph (https://www.safegraph.com/)
+* Placekey
+   * The crosswalk between _hospital_pk_ and [Placekey](https://www.placekey.io/) can help identify the hospital locations as well as be used to easily pair with 3rd party movement data, like [SafeGraph](https://www.safegraph.com/), to analyze foot-traffic data in and around each POI  
 
 
 ### What other data sources cover the same/similar information at the hospital level?
