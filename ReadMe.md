@@ -156,7 +156,7 @@ As you seek to create meaningful metrics from this data, be aware that there are
 
 
 
-List of ratios that it is not possible to calculate in this data release: 
+This is a list of ratios that it is not possible to calculate in this data release: 
 
 
 * There are several pediatric ratios that are not possible to calculate. 
