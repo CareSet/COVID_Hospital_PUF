@@ -23,6 +23,9 @@
 		exit();
 	}
 	
+	if(!is_dir($dir_to_write_to. "/questions")){
+		mkdir($dir_to_write_to. "/questions");
+	}
 
 
 	$split_level = '###'; //anything with this level or lower goes into subfile
@@ -57,14 +60,21 @@
 			//do nothing on this file...
 		}else{
 			$this_heading = trim($file_data['heading']);
-			$list_item_link = "* [$this_heading]($this_file)\n";
+			$list_item_link = "* [$this_heading](/questions/$this_file)\n";
 			$save_files['ReadMe.md']['inside_lines'][] = $list_item_link;
 		}
 	}
 
 	foreach($save_files as $this_file_name => $file_data){
-		$file_text = implode("\n",$file_data['inside_lines']);
-		$output_file = $dir_to_write_to . '/' . $this_file_name;
+		$file_text = implode('',$file_data['inside_lines']);
+
+		if($this_file_name == 'ReadMe.md'){
+			$sub_dir = '/';
+		}else{
+			$sub_dir = '/questions/';
+		}
+
+		$output_file = $dir_to_write_to . $sub_dir . $this_file_name;
 		file_put_contents($output_file,$file_text);
 	}
 
