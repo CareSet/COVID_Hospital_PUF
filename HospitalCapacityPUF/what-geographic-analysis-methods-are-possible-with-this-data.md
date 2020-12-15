@@ -1,3 +1,2 @@
 ### What geographic analysis methods are possible with this data?
-
 See the question about data linking for methods to link data into various census datasets. These datasets cover issues related to socioeconomic status, social determinants of health and other healthcare equity issues. There is also a field called is_metro_micro which can be used to quickly make a determination about how large a city the hospital is serving. This is a good way to quickly conduct a geographical analysis of rural vs urban settings in the reported data. This is based on the [Metropolitan vs Micropolitan distinction in Census data](https://www.census.gov/programs-surveys/metro-micro.html)
