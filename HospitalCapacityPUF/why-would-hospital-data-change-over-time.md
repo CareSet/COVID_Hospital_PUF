@@ -1,0 +1,5 @@
+### Why would hospital data change over time?
+
+As the central database is updated over time, new information becomes available. This is especially true for any hospital reporting that occurs one day late, before the day that a weekly snapshot of data is taken. So if the data file is released every Monday (for instance) and a specific hospital failed to report on Thursday, but then reports for the Thursday data on Tuesday. Subsequent data releases will include the updated hospital data, which will be slightly different than the data that is initially released. This is a “reporting lag” effect that is common to any complex reporting/surveillance process (the same kind of lag can happen with medical claim databases over time, for instance).
+
+
