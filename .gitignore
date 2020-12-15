@@ -1,0 +1,68 @@
+
+#CareSet defaults
+*.yaml
+notgit/
+config.php
+
+#ignore log files
+/log/*.txt
+/log/*.log
+
+#cruft blocks
+.DS_Store
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+*.esproj
+nbproject
+
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*.csv
+*~
+*.sass-cache
+
+# Laravel 5.5 defaults
+/bootstrap/cache
+/node_modules
+/public/hot
+/public/vendor
+/resources/views/vendor
+/public/storage
+/storage/*.key
+/vendor
+/.idea
+/.vagrant
+Homestead.json
+Homestead.yaml
+tee
+npm-debug.log
+yarn-error.log
+.env
+composer.lock
+ 
+#ignore vagrant
+.vagrant/
+
+#ignore local data files
+*.data
+data/*
+data
+
+#json auth files like from google.
+*.auth.json
+*.token.json
+
+# ignore compiled python files
+*.pyc 
+
+
