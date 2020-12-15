@@ -4,10 +4,6 @@ This document answers frequently asked questions about the COVID-19 facility-lev
 
 
 
-
-
-
-
 * [Where to get this data?](where-to-get-this-data.md)
 
 * [What is this data and where does it come from?](what-is-this-data-and-where-does-it-come-from.md)
