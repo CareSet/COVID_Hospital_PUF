@@ -254,6 +254,8 @@ This is a list of issues submitted to this FAQ that contain relevant discussions
 * [What does "inpatient" and "bed" mean in the data](https://github.com/CareSet/COVID_Hospital_PUF/issues/17)
 * [Clarification on documentation of specific fields](https://github.com/CareSet/COVID_Hospital_PUF/issues/15)
 * [strange data around specific CCNs](https://github.com/CareSet/COVID_Hospital_PUF/issues/14)
+* [ICU bed usage during COVID spike](https://github.com/CareSet/COVID_Hospital_PUF/issues/13)
+* 
 
 ### Who wrote this FAQ?
 This FAQ is a collaboration between: 
