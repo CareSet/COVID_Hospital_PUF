@@ -255,6 +255,9 @@ This is a list of issues submitted to this FAQ that contain relevant discussions
 * [Clarification on documentation of specific fields](https://github.com/CareSet/COVID_Hospital_PUF/issues/15)
 * [strange data around specific CCNs](https://github.com/CareSet/COVID_Hospital_PUF/issues/14)
 * [ICU bed usage during COVID spike](https://github.com/CareSet/COVID_Hospital_PUF/issues/13)
+* [Interpreting over 100% capacity](https://github.com/CareSet/COVID_Hospital_PUF/issues/8)
+* [How data will be archived](https://github.com/CareSet/COVID_Hospital_PUF/issues/6)
+* [Intrepeting Staffing Levels](https://github.com/CareSet/COVID_Hospital_PUF/issues/5)
 * 
 
 ### Who wrote this FAQ?
