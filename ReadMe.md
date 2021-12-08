@@ -244,6 +244,17 @@ The University of Minnesota COVID-19 Hospitalization Tracking Project allows dat
 https://carlsonschool.umn.edu/mili-misrc-covid19-tracking-project
 Feel free to ask questions about this county roll up in the github issues for this repository, someone from the Carlson School will be paying attention!
 
+### Critical issues
+
+This is a list of issues submitted to this FAQ that contain relevant discussions on various topics. They are "closed" in the sense that we are not discussing them further, but they contain information that people should be aware of.
+
+* [Document errors in OR / WA suspected pediatric admissions, state aggregate files](https://github.com/CareSet/COVID_Hospital_PUF/issues/24)
+* [Obfuscation of true zeros](https://github.com/CareSet/COVID_Hospital_PUF/issues/21)
+* [Tracking hospital aquired COVID infections](https://github.com/CareSet/COVID_Hospital_PUF/issues/19)
+* [What does "inpatient" and "bed" mean in the data](https://github.com/CareSet/COVID_Hospital_PUF/issues/17)
+* [Clarification on documentation of specific fields](https://github.com/CareSet/COVID_Hospital_PUF/issues/15)
+* [strange data around specific CCNs](https://github.com/CareSet/COVID_Hospital_PUF/issues/14)
+
 ### Who wrote this FAQ?
 This FAQ is a collaboration between: 
 
