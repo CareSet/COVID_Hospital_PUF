@@ -21,6 +21,8 @@ Every day most hospitals in the U.S. are required to report information on the f
 
 To understand exactly what is in the data it is important to understand what is reported by hospitals each day. Please refer to the current version of the [COVID-19 Guidance for Hospital Reporting and FAQs For Hospitals, Hospital Laboratory, and Acute Care Facility Data Reporting](https://www.hhs.gov/sites/default/files/covid-19-faqs-hospitals-hospital-laboratory-acute-care-facility-data-reporting.pdf)
 
+Note: The requirements for reporting data have changed since the release of this data. On Feb 2, 2022 influenza data and pediatric data became required. On January 19, 2022 the tracking of "Therapeutic D" option, which is the administration of sotrovimab, became required.
+
 
 This data is reported daily from hospitals, either through the Teletracking system or through reports sent via State-level health departments, and entered into the central HHS Protect database.
 
@@ -46,7 +48,7 @@ Beyond these data corrections, it is improbable that modifications or censoring 
 Which in turn leads to its own issues. If hospital personnel accidentally type in that they have ‘11’ ICU beds, where in fact they only have 10, then this error might not be caught or corrected. It is also possible that hospitals will seek to amend their reports at a later time, based on improved information. The goal is to have a perfectly accurate daily reporting of dozens of complex values from thousands of facilities across the country. This is a lofty goal indeed. For each hospital report, hundreds of people are directly or indirectly involved, at the hospitals, state agencies, as well as Federal employees, and contractors. In many cases, these people have been working for months with no weekends or breaks. Some of them are basically either working on this or sleeping. At the hospital, especially at smaller facilities, personnel might be making the decision between working on reporting obligations and patient care. As more and more of the reporting process becomes automated and those automations are made fully reliable, the workload of individuals along the hospital reporting data pipeline has been reduced, and the quality of the underlying data is continuously improving. This is evidenced in the [graph of hospital reporting rates](https://healthdata.gov/covid-19-hospital-reporting-hospital-reporting-trend-dashboard) which shows more and more reporting fields being correctly reported every day by hospitals across the country. 
 
 
-It is critical to remain empathetic with the front-line hospitals who are responsible for entering this data. They do so under very potentially stressful circumstances and the reporting is most important, exactly when things are most difficult at the hospital. Also, when HHS has made fields optional for hospitals (i.e. influenza reporting etc) not hospital should be criticized for not reporting that information. Rather, hospitals that do report this information should be celebrated. 
+It is critical to remain empathetic with the front-line hospitals who are responsible for entering this data. They do so under very potentially stressful circumstances, and the reporting is most important exactly when things are most difficult at the hospital. Also, when HHS has made fields optional, hospitals should not be criticized for not reporting that information. Rather, hospitals that do report this information should be celebrated. 
 
 
 The data release is not perfect, and expectations that the resulting data will be perfect are not reasonable. The right answer to the question “is the data reliable?” is not yes or no. The data has been reliable enough to be used in Federal response planning for some time and continues to improve each day. The reporting consistency is high enough now that the data is likely to become reliable enough for broad release to the public for dozens of purposes. 
@@ -132,7 +134,7 @@ All of the decisions about how these resources are distributed are sourced from 
 This is not the first dataset to be released to the public from HHS Protect. There is a publicly available website that features the data released from HHS Protect at [https://protect-public.hhs.gov/](https://protect-public.hhs.gov/).
 
 ### What about pediatric data?
-There is information about pediatric cases and pediatric hospitals included in the dataset. However, there is currently no information about how full pediatric ICUs are in this data release. This is due to a strategic decision in the underlying reporting infrastructure. Generally pediatric data is not reported, given that pediatric infection is relatively rare, and in order to ensure that reporting is as simple as possible for hospitals. 
+Pediatric data is now required as of Feb 2, 2022. This is likely due to the rising cases of pediatric hospitalizations since the Omicron variant emergence.
 
 ### What is the structure of the data?
 This is a CSV flat file and the structure is documented in the data dictionary.
@@ -168,13 +170,10 @@ This is a list of ratios that it is not possible to calculate in this data relea
 As the central database is updated over time, new information becomes available. This is especially true for any hospital reporting that occurs one day late, before the day that a weekly snapshot of data is taken. So if the data file is released every Monday (for instance) and a specific hospital failed to report on Thursday, but then reports for the Thursday data on Tuesday. Subsequent data releases will include the updated hospital data, which will be slightly different than the data that is initially released. This is a “reporting lag” effect that is common to any complex reporting/surveillance process (the same kind of lag can happen with medical claim databases over time, for instance).
 
 ### Influenza data?
-The reporting for influenza data from hospitals is common, but optional. 
+The reporting for influenza data from hospitals was added as a requirement starting Feb 2, 2022. Before this date, influenza data reporting was optional. It is important not to compare the influenza data from before this requirment with the data afterwards. Specifically, a hospital reporting no influenza data before this date should not be interpreted as having no influenza cases. 
 
 ### Is there any data missing from the file?
 Yes.
-
-
-See the question on which types of hospitals are missing from this data. Also note that influenza data is not currently required for reporting purposes.
 
 
 When there are fewer than 4 patients in a data field the cell is redacted and replaced with -999999. This value was chosen to ensure that users would not make the mistake of quickly “averaging” a column to come to a conclusion that does not account for the fact that many of the cells contain too few patients to release (for privacy concerns). To conduct analysis on this data, one must decide how to handle the -999999 fields. 
@@ -243,6 +242,17 @@ Distinctions like this account for a substantial amount of the differences betwe
 The University of Minnesota COVID-19 Hospitalization Tracking Project allows data downloads of its county-level data average percent beds filled based on this data: 
 https://carlsonschool.umn.edu/mili-misrc-covid19-tracking-project
 Feel free to ask questions about this county roll up in the github issues for this repository, someone from the Carlson School will be paying attention!
+
+
+### Therapeutics
+
+As specific therapeutic approaches have proven themselves valuable, reporting of which approaches are used has become required, and 
+
+* Therapeutic A (casirivimab/imdevimab)
+* Therapeutic C (bamlanivimab/etesevimab)
+• Therapeutic D (sotrovimab)
+
+However, therapeutic data is not yet part of the released data. 
 
 ### Critical issues
 
