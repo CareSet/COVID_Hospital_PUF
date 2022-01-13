@@ -119,6 +119,8 @@ Any analysis that seeks to understand how the COVID crisis has impacted local co
 
 There continue to be misinformation campaigns that deny the usefulness of masks or detract from other CDC recommendations, like social distancing. Many of these campaigns emphasize that the severity of the disease is less than it actually is. This dataset can be used to understand and model the regional impact of these misinformation campaigns, as well as provide direct evidence needed to combat them. 
 
+### Should I analyze this data before seeking hospital treatment? Or defer treatment entirely?
+NO. Per the HealthData.gov team, "Patients should not be discouraged from seeking hospital care based on their interpretation of the data. Hospitals have protocols in place to keep patients safe from exposure and to ensure all patients are prioritized for care."
 
 ### What is HHS Protect Data and its role in COVID-19 planning?
 The Central HHS Protect database powers the highest level of COVID coordination in the United States. There are multiple Federal resources, including access to doses of Remdesivir, which are allocated based on the daily hospital reporting that ultimately goes into the HHS Protect Database. Other important resources include doctors from the DOD and other Federal teams that can be used to augment staff at local hospitals in emergency situations. 
@@ -172,7 +174,7 @@ The reporting for influenza data from hospitals is common, but optional.
 Yes.
 
 
-See the question on which types of hospitals are missing from this data. Also note that influenza data is not currently required for reporting purposees.
+See the question on which types of hospitals are missing from this data. Also note that influenza data is not currently required for reporting purposes.
 
 
 When there are fewer than 4 patients in a data field the cell is redacted and replaced with -999999. This value was chosen to ensure that users would not make the mistake of quickly “averaging” a column to come to a conclusion that does not account for the fact that many of the cells contain too few patients to release (for privacy concerns). To conduct analysis on this data, one must decide how to handle the -999999 fields. 
@@ -217,8 +219,6 @@ The impact on hospitals is very localized. The problem with releasing aggregated
 
 
 ### I checked a hospital’s dashboard and the numbers are slightly different from the ones in this file. Why is that? 
-
-
 First, it could be a data entry or aggregation error. (There are ways to provide feedback on this data at healthdata.gov.) However, there could be reasons for small discrepancies between an individual facility’s dashboard or internal reporting and this file, that are not mistakes of any kind. For one, this file provides a snapshot of the previous week’s data, so an individual facility’s reporting may be more up to date. The aggregations for hospital dashboards are typically daily, while this dataset is aggregated across a week (Friday-Thurs), and does not not represent any specific day. There could also be differences in data definitions between the ones HHS has settled on and any particular local facility. It seems trivial but what it means to have a “bed” is not actually that simple. This is also a frequent reason for small differences between state-level reports and national reports.  
 
 
