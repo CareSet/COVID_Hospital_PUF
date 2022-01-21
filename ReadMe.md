@@ -26,6 +26,8 @@ Note: The requirements for reporting data have changed since the release of this
 
 This data is reported daily from hospitals, either through the Teletracking system or through reports sent via State-level health departments, and entered into the central HHS Protect database.
 
+If you would like to see the form that is used to gather this data, you can download [a print out of the Teletracker UI from this regulatory comment page](https://www.reginfo.gov/public/do/PRAViewIC?ref_nbr=202201-0990-001&icID=245355).
+
 
 ### What is the update schedule for this dataset?
 This dataset snapshot is taken from Friday to Thursday and published every Monday.
